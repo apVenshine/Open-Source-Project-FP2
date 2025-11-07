@@ -194,12 +194,6 @@ p{
     justify-content: space-between;
 }
 
-h3{
-    font-size: 36px;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-}
-
 .course-col{
     flex-basis: 31%;
     background: #fff3ff;
@@ -211,6 +205,9 @@ h3{
 }
 
 h3{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
