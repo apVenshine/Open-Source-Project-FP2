@@ -22,7 +22,7 @@ nav img{
     width: 150px;
 }
 
-.nav links{
+.nav-links{
     flex: 1;
     text-align: right;
 }
@@ -30,7 +30,7 @@ nav img{
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 8 12px;
+    padding: 8px 12px;
     position: relative;
 }
 
