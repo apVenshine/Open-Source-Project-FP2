@@ -1,62 +1,50 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | University of College</title>
+    <title>University Website Design</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
-<section class="header">
+<section class="sub-header">
     <nav>
-        <a href="index.html"><img src="Pics/logo.png" alt="University Logo"></a>
-        <div class="nav-links" id="navLinks">
+        <a href="University ver1.html"><img src="Pics/logo.png" alt="University Logo"></a>
+        <div class="nav-links" id ="navLinks">   
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html" class="active">ABOUT</a></li>
+                <li><a href="University ver1.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
                 <li><a href="courses.html">COURSES</a></li>
                 <li><a href="blog.html">BLOG</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="contact us.html">CONTACT</a></li>
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
-
-    <div class="text-box">
-        <h1>About Our University</h1>
-        <p>We are dedicated to academic excellence and student success.  
-           Our institution fosters innovation, leadership, and global understanding.</p>
-        <a href="courses.html">Explore Our Programs</a>
-    </div>
+    <h1>About Us</h1>
 </section>
 
-<!-- About Content Section -->
-<section class="course">
-    <h1>Who We Are</h1>
-    <p>Founded on the values of integrity, knowledge, and community,  
-       the University of College provides quality education designed  
-       to prepare students for future challenges.</p>
-
+<!---About Us Content--->
+<section class="about-us">
     <div class="row">
-        <div class="course-col">
-            <h3>Our Mission</h3>
-            <p>To nurture learners who are globally competent, morally upright, and socially responsible.</p>
+
+        <div class="about-col">
+            <h1>Who Are We?</h1>
+            <p>At University of College, we are dedicated to providing quality education and fostering a supportive learning environment. 
+                Our institution is committed to academic excellence, innovation, and community engagement.</p>
+            <a href="">EXPLORE NOW</a>
         </div>
-        <div class="course-col">
-            <h3>Our Vision</h3>
-            <p>To be a world-class institution known for academic excellence and innovation.</p>
-        </div>
-        <div class="course-col">
-            <h3>Our Core Values</h3>
-            <p>Integrity, Excellence, Inclusivity, and Service — values that guide every member of our community.</p>
+
+        <div class="about-col">
+            <img src="Pics/Profs.jpg" alt="About Us Image">
         </div>
     </div>
 </section>
 
-<!-- Footer -->
-<section class="footer">
+  <!---Footer--->
+  <section class="footer">
     <h4>About Us</h4>
     <p>We are committed to providing quality education and fostering a supportive learning environment for all our students.</p>
     <div class="icons">
@@ -66,15 +54,17 @@
         <i class="fa fa-linkedin"></i>
     </div>
     <p>Made with <i class="fa fa-heart-o"></i> by University of College</p>
-</section>
+  </section>
 
-<!-- JS for toggle menu -->
+<!---Toggle Javascript--->
 <script>
     var navLinks = document.getElementById("navLinks");
-    function showMenu() {
+
+    function showMenu(){
         navLinks.style.right = "0";
     }
-    function hideMenu() {
+
+    function hideMenu(){
         navLinks.style.right = "-200px";
     }
 </script>
