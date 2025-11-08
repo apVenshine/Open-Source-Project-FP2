@@ -332,3 +332,51 @@ h3{
     text-align: left;
 }
 
+/*---Testimonials---*/
+.testimonials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testimonials-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #f7f7f7;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.testimonials-col img{
+    width: 60px;
+    height: 60px;
+    overflow: cover;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.testimonials-col p{
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.testimonials-col h3{
+    margin-top: 15px;
+    font-weight: 700;
+    text-align: left;
+}
