@@ -1,64 +1,106 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | University of College</title>
+    <title>University Website Design</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
-<section class="header">
+<section class="sub-header">
     <nav>
-        <a href="index.html"><img src="Pics/logo.png" alt="University Logo"></a>
-        <div class="nav-links" id="navLinks">
+        <a href="University ver1.html"><img src="Pics/logo.png" alt="University Logo"></a>
+        <div class="nav-links" id ="navLinks">   
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="index.html">HOME</a></li>
+                <li><a href="University ver1.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="courses.html">COURSES</a></li>
-                <li><a href="blog.html" class="active">BLOG</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact us.html">CONTACT</a></li>
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
-
-    <div class="text-box">
-        <h1>Our Latest Updates</h1>
-        <p>Stay informed with campus news, events, and inspiring student stories.</p>
-        <a href="contact.html">Join Our Community</a>
-    </div>
+    <h1>Our Course</h1>
 </section>
 
-<!-- Blog Content Section -->
-<section class="blog-content">
-    <h1>Recent Posts</h1>
-    <p>Explore the latest insights, activities, and announcements from our university community.</p>
-
+<!---Our Courses--->
+<section class="course">
+    <h1>Course We Offer</h1>
+    <p> Explore our wide range of courses that cater to different 
+        interests and career paths.<br>
+        Learn from experienced instructors 
+        and gain the skills you need to succeed.</p>
     <div class="row">
-        <div class="blog-col">
-            <img src="Pics/blog1.jpg" alt="Campus Event">
-            <h3>University Week Celebration</h3>
-            <p>Highlights from our annual University Week filled with exciting competitions, exhibits, and student showcases.</p>
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Our intermediate courses provide a solid foundation in various subjects, 
+                preparing students for advanced studies and career opportunities.</p>
         </div>
-        <div class="blog-col">
-            <img src="Pics/blog2.jpg" alt="Achievement">
-            <h3>Student Achievements</h3>
-            <p>Congratulations to our top-performing students and alumni who continue to make us proud.</p>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Our degree programs offer in-depth knowledge and practical skills 
+                in your chosen field, equipping you for professional success.</p>
         </div>
-        <div class="blog-col">
-            <img src="Pics/blog3.webp" alt="Community Program">
-            <h3>Community Outreach</h3>
-            <p>Our outreach programs continue to serve local communities through education and volunteerism.</p>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Our postgraduate courses are designed for advanced learning, 
+                research opportunities, and specialization in specific areas of study.</p>
         </div>
     </div>
 </section>
 
-<!-- Footer -->
-<section class="footer">
+<!---Facilities--->
+<section class="facility">
+  <h1>Our Facilities</h1>
+  <p>We provide world class facilities to our students.</p>
+
+  <div class="row">
+
+        <div class="facility-col">
+        <img src="Pics/Library (1).jpg">
+        <h3>World Class Library</h3>
+        <p>Our library offers a vast collection of books, journals, and digital resources to support your academic journey.</p>
+        </div>
+
+        <div class="facility-col">
+        <img src="Pics/Court  (2).jpg">
+        <h3>Largest Play Ground</h3>
+        <p>Our expansive playground provides ample space for sports and recreational activities, promoting a healthy lifestyle.</p>
+        </div>
+
+        <div class="facility-col">
+        <img src="Pics/Cafeteria (3).jpg">
+        <h3>Healthy Food Cafeteria</h3> 
+        <p>Our cafeteria serves a variety of nutritious and delicious meals to keep you energized throughout the day.</p>
+        </div>
+
+        <div class="facility-col">
+        <img src="Pics/Laboratory.jpg">
+        <h3>Well Equipped Labs</h3> 
+        <p>Our state-of-the-art laboratories are equipped with the latest technology to facilitate hands-on learning and research.</p>
+        </div>
+
+        <div class="facility-col">
+        <img src="Pics/Hall.jpg">
+        <h3>Spacious Lecture Halls</h3>
+        <p>Our lecture halls are designed to provide a comfortable and engaging learning environment for students.</p>
+        </div>
+
+        <div class="facility-col">
+        <img src="Pics/Auditorium.jpg">
+        <h3>Auditorium</h3> 
+        <p>Our auditorium hosts various events, seminars, and performances, providing a platform for
+      </div>
+  </div>
+</section>
+
+  <!---Footer--->
+  <section class="footer">
     <h4>About Us</h4>
-    <p>We aim to share inspiring stories and important updates to keep our community connected and informed.</p>
+    <p>We are committed to providing quality education and fostering a supportive learning environment for all our students.</p>
     <div class="icons">
         <i class="fa fa-facebook"></i>
         <i class="fa fa-twitter"></i>
@@ -66,15 +108,17 @@
         <i class="fa fa-linkedin"></i>
     </div>
     <p>Made with <i class="fa fa-heart-o"></i> by University of College</p>
-</section>
+  </section>
 
-<!-- JS for toggle menu -->
+<!---Toggle Javascript--->
 <script>
     var navLinks = document.getElementById("navLinks");
-    function showMenu() {
+
+    function showMenu(){
         navLinks.style.right = "0";
     }
-    function hideMenu() {
+
+    function hideMenu(){
         navLinks.style.right = "-200px";
     }
 </script>
