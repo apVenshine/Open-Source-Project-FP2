@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | University of College</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="Pics/logo.png" alt="University Logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="blog.html" class="active">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+        <h1>Our Latest Updates</h1>
+        <p>Stay informed with campus news, events, and inspiring student stories.</p>
+        <a href="contact.html">Join Our Community</a>
+    </div>
+</section>
+
+<!-- Blog Content Section -->
+<section class="blog-content">
+    <h1>Recent Posts</h1>
+    <p>Explore the latest insights, activities, and announcements from our university community.</p>
+
+    <div class="row">
+        <div class="blog-col">
+            <img src="Pics/blog1.jpg" alt="Campus Event">
+            <h3>University Week Celebration</h3>
+            <p>Highlights from our annual University Week filled with exciting competitions, exhibits, and student showcases.</p>
+        </div>
+        <div class="blog-col">
+            <img src="Pics/blog2.jpg" alt="Achievement">
+            <h3>Student Achievements</h3>
+            <p>Congratulations to our top-performing students and alumni who continue to make us proud.</p>
+        </div>
+        <div class="blog-col">
+            <img src="Pics/blog3.jpg" alt="Community Program">
+            <h3>Community Outreach</h3>
+            <p>Our outreach programs continue to serve local communities through education and volunteerism.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We aim to share inspiring stories and important updates to keep our community connected and informed.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by University of College</p>
+</section>
+
+<!-- JS for toggle menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
