@@ -1,79 +1,81 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | University of College</title>
+    <title>University Website Design</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
-<section class="header">
+<section class="sub-header">
     <nav>
-        <a href="index.html"><img src="Pics/logo.png" alt="University Logo"></a>
-        <div class="nav-links" id="navLinks">
+        <a href="University ver1.html"><img src="Pics/logo.png" alt="University Logo"></a>
+        <div class="nav-links" id ="navLinks">   
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="index.html">HOME</a></li>
+                <li><a href="University ver1.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="courses.html">COURSES</a></li>
                 <li><a href="blog.html">BLOG</a></li>
-                <li><a href="contact.html" class="active">CONTACT</a></li>
+                <li><a href="contact us.html">CONTACT</a></li>
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
-
-    <div class="text-box">
-        <h1>Contact Us</h1>
-        <p>We’d love to hear from you! Reach out with questions, feedback, or partnership inquiries.</p>
-        <a href="#contact-form">Send a Message</a>
-    </div>
+    <h1>Contact Us</h1>
 </section>
 
-<!-- Contact Section -->
-<section class="contact-us" id="contact-form">
+<!---Contact Us--->
+<section class="location">
+    <img src="Pics/Location.JPG">
+</section>
+
+<section class="contact-us">
+
     <div class="row">
+
         <div class="contact-col">
             <div>
                 <i class="fa fa-home"></i>
                 <span>
-                    <h5>123 University Avenue</h5>
-                    <p>New York, USA</p>
+                    <h5>123 University Ave, City, Country</h5>
+                    <p>Building A, Room 101</p>
                 </span>
             </div>
             <div>
                 <i class="fa fa-phone"></i>
                 <span>
-                    <h5>+63 912 345 6789</h5>
-                    <p>Monday to Friday, 8AM - 5PM</p>
+                    <h5>+123 456 7890</h5>
+                    <p>Monday to Friday 9am to 6pm</p>
                 </span>
             </div>
             <div>
                 <i class="fa fa-envelope-o"></i>
                 <span>
-                    <h5>info@universitycollege.edu</h5>
-                    <p>Email us your query anytime</p>
-                </span>
-            </div>
+                    <h5>info@gmail.com</h5>
+                    <p>Email us your query anytime!</p>
+                </span>  
+        </div>
         </div>
 
         <div class="contact-col">
             <form action="">
                 <input type="text" placeholder="Enter your name" required>
                 <input type="email" placeholder="Enter your email" required>
-                <input type="text" placeholder="Enter your subject" required>
+                <input type="text" placeholder="Subject" required>
                 <textarea rows="8" placeholder="Message" required></textarea>
-                <button type="submit" class="hero-btn red-btn">Send Message</button>
+                <button type="submit" class="hero-btn red-btn">SEND MESSAGE</button>
             </form>
         </div>
-    </div>
+
+    </div>     
 </section>
 
-<!-- Footer -->
-<section class="footer">
+  <!---Footer--->
+  <section class="footer">
     <h4>About Us</h4>
-    <p>Have any questions or concerns? We’re here to help and guide you every step of the way.</p>
+    <p>We are committed to providing quality education and fostering a supportive learning environment for all our students.</p>
     <div class="icons">
         <i class="fa fa-facebook"></i>
         <i class="fa fa-twitter"></i>
@@ -81,15 +83,17 @@
         <i class="fa fa-linkedin"></i>
     </div>
     <p>Made with <i class="fa fa-heart-o"></i> by University of College</p>
-</section>
+  </section>
 
-<!-- JS for toggle menu -->
+<!---Toggle Javascript--->
 <script>
     var navLinks = document.getElementById("navLinks");
-    function showMenu() {
+
+    function showMenu(){
         navLinks.style.right = "0";
     }
-    function hideMenu() {
+
+    function hideMenu(){
         navLinks.style.right = "-200px";
     }
 </script>
