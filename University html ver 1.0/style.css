@@ -277,19 +277,25 @@ h3{
 }
 
 .layer:hover {
-  background: rgba(255, 0, 0, 0.4); 
+  background: rgba(122, 126, 255, 0.503); 
 }
-
 
 .layer h3 {
   color: #fff;
-  font-size: 24px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background 0.3s;
+  font-weight: 500;
+  width: 100%;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
 }
 
 
